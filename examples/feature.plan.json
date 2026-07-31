@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "name": "generic-feature",
+  "baseRef": "main",
+  "maxConcurrency": 2,
+  "maxAttempts": 2,
+  "timeoutMs": 900000,
+  "setup": [],
+  "codexCommand": "codex",
+  "approvalPolicy": "never",
+  "tasks": [
+    {
+      "id": "core",
+      "title": "Implement the core portion of the feature",
+      "prompt": "Replace this with the exact core task. Follow the target repository's local guidance and add focused tests.",
+      "dependsOn": [],
+      "writeScope": ["src/core/**"],
+      "verify": ["pnpm test"],
+      "setup": [],
+      "commitMessage": "feat: implement core feature changes"
+    },
+    {
+      "id": "integration",
+      "title": "Implement the integration portion of the feature",
+      "prompt": "Replace this with the exact integration task. Consume the core contract and preserve the target repository's security boundaries.",
+      "dependsOn": ["core"],
+      "writeScope": ["src/integration/**"],
+      "verify": ["pnpm test"],
+      "setup": [],
+      "commitMessage": "feat: implement integration changes"
+    },
+    {
+      "id": "review",
+      "title": "Review the integrated feature",
+      "prompt": "Review the complete feature against the user request, local repository guidance, and the contracts produced by the earlier tasks. Add only focused fixes within the review scope.",
+      "dependsOn": ["integration"],
+      "writeScope": ["src/**"],
+      "verify": ["pnpm test"],
+      "setup": [],
+      "commitMessage": "chore: review integrated feature"
+    }
+  ]
+}

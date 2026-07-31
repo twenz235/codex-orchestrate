@@ -1,0 +1,16 @@
+{
+  "name": "codex-orchestrate",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Reusable Codex orchestration plugin with a dependency-aware execution core.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "orchestrate": "node --experimental-strip-types skills/codex-orchestrate/scripts/orchestrator.ts",
+    "test": "node --experimental-strip-types --test tests/orchestrator.test.ts"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "license": "MIT"
+}

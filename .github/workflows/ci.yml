@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.6"
+      - run: node --experimental-strip-types --test tests/orchestrator.test.ts
+      - run: node --experimental-strip-types skills/codex-orchestrate/scripts/orchestrator.ts --plan examples/feature.plan.json --dry-run

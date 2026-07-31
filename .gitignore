@@ -1,0 +1,4 @@
+node_modules/
+.codex-orchestrator/
+.DS_Store
+*.log

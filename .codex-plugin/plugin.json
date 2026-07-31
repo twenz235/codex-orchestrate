@@ -1,0 +1,24 @@
+{
+  "name": "codex-orchestrate",
+  "version": "0.1.0",
+  "description": "Coordinate dependency-aware Codex worker sessions with isolated worktrees, verification, retries, and safe integration.",
+  "author": {
+    "name": "Codex Orchestrate contributors"
+  },
+  "license": "MIT",
+  "keywords": ["codex", "orchestration", "multi-agent", "worktree", "automation"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Orchestrate",
+    "shortDescription": "Plan and run safe multi-session Codex work.",
+    "longDescription": "Builds a dependency-aware task plan, simulates edge cases, runs isolated Codex workers, verifies changes, and integrates successful work without pushing or deploying automatically.",
+    "developerName": "Codex Orchestrate contributors",
+    "category": "Productivity",
+    "capabilities": ["Plan", "Execute", "Verify"],
+    "defaultPrompt": [
+      "Orchestrate this feature across parallel Codex sessions.",
+      "Create and simulate a safe multi-agent implementation plan.",
+      "Resume the interrupted Codex orchestration run."
+    ]
+  }
+}
