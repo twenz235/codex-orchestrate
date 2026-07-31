@@ -11,6 +11,33 @@ the execution core lives at
 
 The runner never pushes, deploys, or merges into a shared branch automatically.
 
+## Install in Codex
+
+Add this GitHub repository as a Plugin marketplace, then install the Plugin:
+
+```bash
+codex plugin marketplace add twenz235/codex-orchestrate --ref main
+codex plugin add codex-orchestrate@codex-orchestrate
+```
+
+Verify the marketplace and installed Plugin:
+
+```bash
+codex plugin marketplace list
+codex plugin list
+```
+
+Start a new Codex thread after installing or updating so the Skill index is
+refreshed. To update the Git-backed marketplace later:
+
+```bash
+codex plugin marketplace upgrade codex-orchestrate
+codex plugin add codex-orchestrate@codex-orchestrate
+```
+
+For a pinned release, replace `main` with a Git tag such as `v0.1.0` after that
+tag has been published.
+
 ## Local development
 
 This repository requires Node 22.6 or newer so the runner can execute its
