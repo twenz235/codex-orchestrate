@@ -1,9 +1,9 @@
 ---
-name: orchestrate
+name: fac
 description: Coordinate dependency-aware Codex worker sessions for implementation work across any repository. Use when the user asks to orchestrate, parallelize, delegate, or automatically run multiple Codex sessions; build a task DAG, simulate edge cases, execute isolated worktrees, verify and integrate changes, retry failures, or resume an interrupted run.
 ---
 
-# Codex Orchestrate
+# FAC — Full Auto Coordination
 
 Use this Skill as the coordinator for multi-session coding work. Keep the
 workflow project-agnostic: read the target repository's local instructions and
