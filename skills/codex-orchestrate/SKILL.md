@@ -1,5 +1,5 @@
 ---
-name: codex-orchestrate
+name: orchestrate
 description: Coordinate dependency-aware Codex worker sessions for implementation work across any repository. Use when the user asks to orchestrate, parallelize, delegate, or automatically run multiple Codex sessions; build a task DAG, simulate edge cases, execute isolated worktrees, verify and integrate changes, retry failures, or resume an interrupted run.
 ---
 

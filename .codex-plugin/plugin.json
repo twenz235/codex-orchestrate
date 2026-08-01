@@ -1,6 +1,6 @@
 {
   "name": "codex-orchestrate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Coordinate dependency-aware Codex worker sessions with isolated worktrees, verification, retries, and safe integration.",
   "author": {
     "name": "Codex Orchestrate contributors"

@@ -2,7 +2,7 @@ interface:
   display_name: "Codex Orchestrate"
   short_description: "Coordinate safe multi-session Codex work"
   brand_color: "#2563EB"
-  default_prompt: "Use $codex-orchestrate to plan, simulate, and run this work across Codex sessions."
+  default_prompt: "Use $orchestrate to plan, simulate, and run this work across Codex sessions."
 
 policy:
   allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 # Codex Orchestrate
 
-Codex Orchestrate is a reusable Codex Plugin. Its `codex-orchestrate` Skill
+Codex Orchestrate is a reusable Codex Plugin. Its `orchestrate` Skill
 turns a feature request into a dependency-aware task plan, simulates two
 different failure rounds, and runs isolated Codex workers with verification,
 retry, timeout, scope enforcement, resumability, and safe integration.
